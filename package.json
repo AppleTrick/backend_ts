@@ -3,6 +3,8 @@
     "dev": "ts-node index.ts"
   },
   "dependencies": {
+    "apollo-server": "^3.12.0",
+    "graphql": "^16.6.0",
     "pg": "^8.11.0",
     "ts-node": "^10.9.1",
     "typeorm": "^0.3.16"
