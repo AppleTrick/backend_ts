@@ -56,11 +56,11 @@ const resolvers = {
     //   return "게시글 등록에 성공하였습니다.";
     // },
 
-    createBoard: async (parent : any , args : any , context: any, info : any) => {
+    createBoard: async (parent: any, args: any, context: any, info: any) => {
       // context : request, header 등에 대한 정보
       // info : graphql 에 대한 정보
       // parent : api에서 api를 호출 할때는 인자가 parent 로 들어가게 된다.
-      
+
       await Board.insert({
         // 1. spread 연산자 이용하여 처리하는 방법
         ...args.createBoardInput,
